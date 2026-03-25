@@ -11,4 +11,3 @@ dependencies = ["click"]
 
 [project.scripts]
 student-cli-tool = "student_cli_tool.cli:hello"
-
