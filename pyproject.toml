@@ -4,10 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "student-cli-tool"
-version = "0.1.0"
-description = "Simple CLI tool for students"
+version = "1.2"
 requires-python = ">=3.8"
-dependencies = ["click"]
 
 [project.scripts]
-student-cli-tool = "student_cli_tool.cli:hello"
+student-cli-tool = "student_cli_tool.main:main"  # must match your module & function name
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/student_cli_tool"]  # tells the builder where to find the package
