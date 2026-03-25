@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release upload ${{ github.event.release.tag_name }} \
-          dist/*.whl \
-          dist/*.tar.gz \
-          --clobber
+            dist/*.whl \
+            dist/*.tar.gz \
+            --clobber
 
